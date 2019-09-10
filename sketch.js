@@ -10,6 +10,7 @@ function setup() {
     // Put things you want to over and over here. 
     // tan background color
     background(239,220,210);
+    strokeWeight(0.2);
 
     // dots in the background
 
@@ -47,7 +48,7 @@ function setup() {
   
   // hairline 
 // remember canvas size is 550,330 where length is 550 and heaight is 330
-  
+ 
 fill(5)
 stroke(2)
 beginShape();
@@ -101,6 +102,20 @@ vertex(0,0);
 
 endShape();
 
+// blue in hair 
+
+fill(0,0,100)
+stroke(2)
+beginShape();
+vertex(0,140);
+vertex(0,140);
+vertex(30,110);
+vertex(30,110);
+vertex(30,0);
+vertex(30,0);
+vertex(0,0);
+vertex(0,0);
+endShape();
 
 // line by eye
 fill(5);
@@ -115,5 +130,11 @@ curveVertex(438,300);
 curveVertex(415,330);
 curveVertex(415,330)
 endShape();
+
+// eye
+
+noFill();
+strokeWeight(4);
+bezier(190,300,240,250,300,320,320,330);
 
   }
