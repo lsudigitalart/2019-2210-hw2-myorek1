@@ -16,7 +16,7 @@ function setup() {
     // creating a loop for the dots in the background 
     // for (init; test; update){statments} 
 
-    /*
+ 
     for (var t = 0; t <500; t+=2){
       
     for(var i = 0; i<500; i+=2){
@@ -44,7 +44,7 @@ function setup() {
       point(i+6,t+2);
     }
   }
-  */
+  
   // hairline 
 // remember canvas size is 550,330 where length is 550 and heaight is 330
   
@@ -73,8 +73,34 @@ curveVertex(120,50);
 curveVertex(114,50);//use this as next start point for hairline
 curveVertex(0,40);
 curveVertex(0,40);
+endShape();
+
+fill(5);
+stroke(2)
+beginShape();
+curveVertex(112,55);
+curveVertex(112,55);
+curveVertex(200,28);
+curveVertex(260,30);
+curveVertex(265,27);
+curveVertex(275,28);
+curveVertex(260,20);
+curveVertex(240,15);
+curveVertex(270,13);
+curveVertex(300,15);
+curveVertex(350,35);
+curveVertex(351,27);
+curveVertex(370,34);
+curveVertex(400,50);
+curveVertex(500,110);
+curveVertex(500,108);
+vertex(500,0);
+vertex(0,0);
+vertex(0,55);
+vertex(0,0);
 
 endShape();
+
 
 // line by eye
 fill(5);
